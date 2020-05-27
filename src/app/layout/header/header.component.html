@@ -1,0 +1,33 @@
+<mat-toolbar class="main-header">
+  <mat-toolbar-row
+    class="main-header-container"
+    fxLayout
+    fxLayoutAlign="space-between center"
+  >
+    <div fxLayout fxLayoutAlign="center center">
+      <img
+        alt="Angular Málaga logo"
+        src="assets/images/angularmalaga-logo.png"
+      />
+      <span class="highlight">Angular</span><span>Málaga</span>
+    </div>
+    <div>
+      <a routerLink="/events">Eventos</a>
+      <a routerLink="/call-for-speakers" routerLinkActive="active"
+        >Call for Speakers</a
+      >
+      <a routerLink="/faq">FAQ</a>
+      <a target="blank" href="https://twitter.com/AngularMalaga"
+        ><fa-icon [icon]="faTwitter"></fa-icon
+      ></a>
+      <a
+        target="blank"
+        href="https://www.youtube.com/channel/UCJhRPniwydP6F0fJnbIBL7Q"
+        ><fa-icon [icon]="faYoutube"></fa-icon
+      ></a>
+      <a target="blank" href="https://www.meetup.com/Angular-Malaga/"
+        ><fa-icon [icon]="faMeetup"></fa-icon
+      ></a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

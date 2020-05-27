@@ -1,0 +1,20 @@
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+mat-toolbar {
+  position: fixed;
+  background-color: transparent;
+  z-index: 5;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.fab {
+  color: #ffffff;
+  background-color: #ffffff;
+}
