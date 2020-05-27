@@ -9,6 +9,23 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 div,
-span {
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #ffffff;
+  font-family: Rubik, arial, helvetica, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.highlight {
+  color: #b52e31;
 }
