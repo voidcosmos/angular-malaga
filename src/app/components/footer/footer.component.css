@@ -1,0 +1,18 @@
+footer {
+  height: 20em;
+  background-color: #1f1f1f;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2NUU1P7f+vWLUYGAoCgApj+UYV4Q5Lo4AEAXocEC+y601MAAAAASUVORK5CYII=)
+      repeat,
+    linear-gradient(#1f1f1f, #1f1f1f);
+  color: white;
+  padding: 1.5em;
+}
+
+.logo {
+  font-size: 3em;
+  opacity: 0.1;
+}
+
+.bio {
+  max-width: 600px;
+}

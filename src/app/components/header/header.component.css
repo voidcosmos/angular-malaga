@@ -1,0 +1,13 @@
+mat-toolbar {
+  position: absolute;
+  background-color: transparent;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.highlight {
+  color: #b52e31;
+}
