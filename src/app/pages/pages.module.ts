@@ -1,14 +1,13 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { C4SComponent } from "./c4s/c4s.component";
-import { MarkdownModule } from "ngx-markdown";
 import { HomeModule } from "./home/home.module";
+import { C4SModule } from "./c4s/c4s.module";
 
-const COMPONENTS = [C4SComponent];
+const COMPONENTS = [];
 
 @NgModule({
   declarations: [...COMPONENTS],
-  imports: [CommonModule, MarkdownModule, HomeModule],
+  imports: [CommonModule, HomeModule, C4SModule],
   exports: [...COMPONENTS]
 })
 export class PagesModule {}
