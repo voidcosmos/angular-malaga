@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>El Equipo</h1>
+  <div class="content" fxLayout="row" fxLayoutAlign="space-evenly center">
+    <mat-card *ngFor="let organizer of organizers">
+      <img
+        mat-card-image
+        [src]="'assets/images/team/' + organizer.photo"
+        alt="Photo of {{ organizer.name }}"
+      />
+      <mat-card-content>
+        <h3>{{ organizer.name }}</h3>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
