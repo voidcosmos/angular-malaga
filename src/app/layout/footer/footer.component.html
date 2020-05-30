@@ -1,4 +1,30 @@
 <footer>
-  <img src="/src/assets/icons/Twitter_Social_Icon_Circle_White.svg.png" />
+  <div fxLayout="row" fxLayoutAlign="space-around" fxLayoutGap="10%">
+    <img src="assets/images/angularmalaga-logo.png" />
+    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20%">
+      <a target="blank" href="https://twitter.com/AngularMalaga"
+        ><fa-icon [icon]="faTwitter"></fa-icon
+      ></a>
+      <a
+        target="blank"
+        href="https://www.youtube.com/channel/UCJhRPniwydP6F0fJnbIBL7Q"
+        ><fa-icon [icon]="faYoutube"></fa-icon
+      ></a>
+      <a target="blank" href="https://www.meetup.com/Angular-Malaga/"
+        ><fa-icon [icon]="faMeetup"></fa-icon
+      ></a>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="space-evenly center">
+      <h3>Código de conducta</h3>
+      <h3>Galería</h3>
+      <h3>Patrocinadores</h3>
+      <h3>Partners</h3>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="space-evenly center">
+      <h3>Asistencia a ponentes</h3>
+      <h3>El equipo</h3>
+    </div>
+  </div>
+
   <div class="bio"></div>
 </footer>

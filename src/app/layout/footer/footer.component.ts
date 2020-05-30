@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import {
+  faTwitter,
+  faYoutube,
+  faMeetup
+} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  selector: "app-footer",
+  templateUrl: "./footer.component.html",
+  styleUrls: ["./footer.component.css"]
 })
-export class FooterComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class FooterComponent {
+  faTwitter = faTwitter;
+  faYoutube = faYoutube;
+  faMeetup = faMeetup;
 }
