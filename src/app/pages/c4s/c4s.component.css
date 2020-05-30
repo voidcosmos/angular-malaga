@@ -1,0 +1,10 @@
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+}
