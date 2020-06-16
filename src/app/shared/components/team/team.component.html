@@ -1,6 +1,12 @@
 <div class="container">
   <h1>El Equipo</h1>
-  <div class="content" fxLayout="row" fxLayoutAlign="space-evenly center">
+  <div
+    class="content"
+    fxLayout="row"
+    fxLayoutAlign="space-evenly center"
+    fxLayout.lt-sm="column"
+    fxLayoutGap.lt-sm="10px"
+  >
     <mat-card *ngFor="let organizer of organizers">
       <img
         mat-card-image
