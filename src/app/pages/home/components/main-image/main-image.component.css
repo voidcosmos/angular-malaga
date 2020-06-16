@@ -3,6 +3,10 @@ img {
   height: auto;
 }
 
+div {
+  display: block;
+}
+
 .container {
   position: relative;
 }
@@ -10,15 +14,18 @@ img {
 .text-container {
   position: absolute;
   max-width: 45%;
+  height: 200px;
   top: 30%;
-  left: 8%;
+  left: 13%;
 }
 
 .title {
-  font-size: 80px;
+  font-size: 100px;
 }
 
 .subtitle {
-  font-size: 40px;
+  position: relative;
+  height: 25%;
+  font-size: 60px;
   margin-bottom: 40px;
 }
