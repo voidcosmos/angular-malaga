@@ -1,0 +1,7 @@
+<div class="gallery">
+  <img
+    [src]="urlStart + previewImage.path"
+    [ngClass]="previewImage.class"
+    *ngFor="let previewImage of previewImages"
+  />
+</div>
