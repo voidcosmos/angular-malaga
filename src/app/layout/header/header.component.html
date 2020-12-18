@@ -1,24 +1,25 @@
-<mat-toolbar class="main-header" [ngClass]="{ 'colored-header': showHeader }">
-  <mat-toolbar-row
-    class="main-header-container"
-    fxLayout
-    fxLayoutAlign="space-between center"
-  >
-    <a routerLink="">
-      <div fxLayout fxLayoutAlign="center center">
-        <img
-          alt="Angular Málaga logo"
-          src="assets/images/angularmalaga-logo.png"
-        />
-        <span class="highlight">Angular</span><span>Málaga</span>
-      </div>
-    </a>
-    <div>
-      <a routerLink="/events">Eventos</a>
-      <a routerLink="/call-for-speakers" routerLinkActive="active"
-        >Call for Speakers</a
-      >
+<mat-toolbar fxLayoutAlign="space-between center" class="main-header">
+  <div fxShow="true" fxHide.gt-sm="true">
+      <fa-icon class="menu-icon" [icon]="faMenu" (click)="toggleSidenav()"></fa-icon>
+  </div>
+
+  <a routerLink="">
+    <div fxLayout fxLayoutAlign="center center">
+      <img
+        alt="Angular Málaga logo"
+        src="assets/images/angularmalaga-logo.png"
+      />
+      <span>AngularMálaga</span>
+    </div>
+  </a>
+  <div fxLayout="row" fxShow="true" fxHide.lt-md="true">
+    <div class="hover-line-links">
+      <a routerLink="/team">El Equipo</a>
+      <a routerLink="/call-for-speakers"
+        >Call for Speakers</a>
       <a routerLink="/faq">FAQ</a>
+      <a routerLink="/code-of-conduct">Código de Conducta</a>
+    </div>
       <a target="blank" href="https://twitter.com/AngularMalaga"
         ><fa-icon [icon]="faTwitter"></fa-icon
       ></a>
@@ -30,6 +31,5 @@
       <a target="blank" href="https://www.meetup.com/Angular-Malaga/"
         ><fa-icon [icon]="faMeetup"></fa-icon
       ></a>
-    </div>
-  </mat-toolbar-row>
+  </div>
 </mat-toolbar>

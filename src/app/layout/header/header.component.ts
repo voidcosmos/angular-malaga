@@ -1,29 +1,27 @@
-import { Component, HostListener } from "@angular/core";
+import { Component } from "@angular/core";
 import {
   faTwitter,
   faYoutube,
-  faMeetup
+  faMeetup,
 } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { SidenavService } from "@shared/services/sidenav.service";
 
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.css"]
+  styleUrls: ["./header.component.css"],
 })
 export class HeaderComponent {
   showHeader: boolean = false;
   faTwitter = faTwitter;
   faYoutube = faYoutube;
   faMeetup = faMeetup;
+  faMenu = faBars;
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    const scrollOffset =
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop ||
-      0;
+  constructor(private sidenavService: SidenavService) {}
 
-    scrollOffset > 300 ? (this.showHeader = true) : (this.showHeader = false);
+  toggleSidenav() {
+    this.sidenavService.toggle();
   }
 }
