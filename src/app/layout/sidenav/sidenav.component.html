@@ -1,0 +1,34 @@
+<mat-sidenav-container fxFlexFill class="example-container">
+    <mat-sidenav class="sidenav" fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" fixedInViewport="true">
+      <div fxLayout="column">
+        <div fxLayoutAlign="center">
+          <img src="assets/images/angularmalaga-logo.png">
+        </div>
+        <mat-divider></mat-divider>
+        <a routerLink="/team">El Equipo</a>
+        <a routerLink="/call-for-speakers"
+          >Call for Speakers</a
+        >
+        <a routerLink="/faq">FAQ</a>
+        <a routerLink="/code-of-conduct">Código de Conducta</a>
+        <mat-divider></mat-divider>
+        <div fxLayoutAlign="center">
+          <a target="blank" href="https://twitter.com/AngularMalaga"
+          ><fa-icon [icon]="faTwitter"></fa-icon
+        ></a>
+        <a
+          target="blank"
+          href="https://www.youtube.com/channel/UCJhRPniwydP6F0fJnbIBL7Q"
+          ><fa-icon [icon]="faYoutube"></fa-icon
+        ></a>
+        <a target="blank" href="https://www.meetup.com/Angular-Malaga/"
+          ><fa-icon [icon]="faMeetup"></fa-icon
+        ></a>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
