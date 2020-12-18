@@ -1,39 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
-
-html,
 body {
-  height: 100%;
-}
-body {
+  font-family: Oswald, sans-serif;
   margin: 0;
-  font-family: Lato, sans-serif;
 }
 
 a {
   outline: 0;
-}
-
-div,
-span,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #ffffff;
-  font-weight: 500;
-}
-
-a {
   text-decoration: none;
 }
 
-.highlight {
-  color: #b52e31;
+fa-icon {
+  transition: color 0.5s;
+}
+
+fa-icon:hover {
+  color: #c2002e;
 }
 
 .centered {
-  padding: 3% 15%;
+  text-align: center;
+}
+
+.highlight {
+  color: #c2002e;
+}
+
+.section {
+  padding: 100px 13%;
+}
+
+.page-container {
+  padding-top: 70px;
+  margin-bottom: 100px;
+}
+
+.red-button {
+  background-color: #fff;
+  border: 2px solid #c2002e;
+  border-radius: 5px;
+  color: #c2002e;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 30px;
+  padding: 15px 50px;
+  transition: all 0.5s;
+}
+
+.red-button:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #c2002e;
+  cursor: pointer;
+}
+
+.text-container {
+  margin: 0 15%;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.text-content {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+h1.section-title {
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 1.78;
+  text-align: center;
+}
+
+h2.section-subtitle {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  line-height: 1.78;
+  text-align: center;
+}
+
+.text-content h1 {
+  color: #c2002e;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.hover-line-links a {
+  padding-bottom: 7px;
+  position: relative;
+}
+
+.hover-line-links > a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #c2002e;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.hover-line-links a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 599px) {
+  .page-container * {
+    text-align: center;
+  }
+
+  .section {
+    padding: 80px 5%;
+  }
+
+  .text-container {
+    margin: 0 5%;
+  }
+
+  .page-container markdown ul li {
+    text-align: left;
+  }
 }
