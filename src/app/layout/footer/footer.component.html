@@ -1,30 +1,33 @@
 <footer>
-  <div fxLayout="row" fxLayoutAlign="space-around" fxLayoutGap="10%">
-    <img src="assets/images/angularmalaga-logo.png" />
-    <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20%">
-      <a target="blank" href="https://twitter.com/AngularMalaga"
-        ><fa-icon [icon]="faTwitter"></fa-icon
-      ></a>
-      <a
-        target="blank"
-        href="https://www.youtube.com/channel/UCJhRPniwydP6F0fJnbIBL7Q"
-        ><fa-icon [icon]="faYoutube"></fa-icon
-      ></a>
-      <a target="blank" href="https://www.meetup.com/Angular-Malaga/"
-        ><fa-icon [icon]="faMeetup"></fa-icon
-      ></a>
+  <div class="container" fxLayout="row" fxLayoutAlign="space-around" fxLayout.lt-md="column">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <img src="assets/images/angularmalaga-logo.png" />
+      <h1><span class="highlight">Angular</span>Málaga</h1>
     </div>
     <div fxLayout="column" fxLayoutAlign="space-evenly center">
-      <h3>Código de conducta</h3>
-      <h3>Galería</h3>
-      <h3>Patrocinadores</h3>
-      <h3>Partners</h3>
+      <h1 class="highlight">¡Síguenos!</h1>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <a target="blank" href="https://twitter.com/AngularMalaga"
+          ><fa-icon size="2x" [icon]="faTwitter"></fa-icon
+        ></a>
+        <a
+          target="blank"
+          href="https://www.youtube.com/channel/UCJhRPniwydP6F0fJnbIBL7Q"
+          ><fa-icon size="2x" [icon]="faYoutube"></fa-icon
+        ></a>
+        <a target="blank" href="https://www.meetup.com/Angular-Malaga/"
+          ><fa-icon size="2x" [icon]="faMeetup"></fa-icon
+        ></a>
+      </div>
+    </div>  
+    <div class="hover-line-links" fxLayout="column" fxLayoutAlign="space-evenly center">
+      <a routerLink="code-of-conduct">Código de conducta</a>
+      <a routerLink="team">El equipo</a>
+      <a routerLink="gallery">Galería</a>
     </div>
-    <div fxLayout="column" fxLayoutAlign="space-evenly center">
-      <h3>Asistencia a ponentes</h3>
-      <h3>El equipo</h3>
+    <div class="hover-line-links" fxLayout="column" fxLayoutAlign="space-evenly center">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2AnMBqXdWIedMFZtArzE5PWDMoWCZJWPxc_Tlu_zNvC1tOw/viewform?usp=sf_link" target="_blank">Da una charla con nosotros</a>
+      <a routerLink="faq">Preguntas Frecuentes</a>
     </div>
   </div>
-
-  <div class="bio"></div>
 </footer>

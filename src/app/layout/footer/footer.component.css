@@ -1,15 +1,33 @@
+a {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
 img {
   height: 100px;
+  margin-bottom: 20px;
   width: 100px;
 }
 
 footer {
-  height: 12em;
   background-color: #1f1f1f;
   color: white;
-  padding: 3em;
+  padding: 80px;
 }
 
-.bio {
-  max-width: 600px;
+fa-icon {
+  margin: 10px;
+}
+
+.container div {
+  margin-bottom: 20px;
+}
+
+.hover-line-links a {
+  text-align: center;
 }

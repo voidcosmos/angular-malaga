@@ -1,14 +1,14 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import {
   faTwitter,
   faYoutube,
-  faMeetup
+  faMeetup,
 } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: "app-footer",
   templateUrl: "./footer.component.html",
-  styleUrls: ["./footer.component.css"]
+  styleUrls: ["./footer.component.css"],
 })
 export class FooterComponent {
   faTwitter = faTwitter;
