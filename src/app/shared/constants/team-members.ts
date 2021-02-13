@@ -6,7 +6,7 @@ export const TEAM_MEMBERS: Organizer[] = [
     name: "Estefanía García Gallardo",
     photo: "nya.jpeg",
     bio:
-      "Soy desarrolladora full stack y amante del open source <3. Entre los proyectos para la comunidad que he creado están <a href='https://npkill.js.org/'>Npkill</a> y la documentación española de RxJS. A veces escribo artículos técnicos y soy editora de <a href='https://medium.com/puntotech'>PuntoTech</a>. También doy charlas de programación por el mundo.",
+      "Soy desarrolladora full stack y amante del open source <3. Entre los proyectos para la comunidad que he creado están <a href='https://npkill.js.org/'>Npkill</a> y la documentación española de RxJS. A veces escribo artículos técnicos y soy editora de <a href='https://medium.com/puntotech'>PuntoTech</a>.",
     socialMedia: [
       { platform: "twitter", url: "https://twitter.com/nyablk" },
       { platform: "github", url: "https://github.com/nyagarcia" },
