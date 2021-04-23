@@ -1,0 +1,26 @@
+a {
+  color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+img {
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+span {
+  color: #fff;
+}
+
+.menu-icon {
+  color: #fff;
+}
+
+mat-toolbar {
+  background-color: #000;
+  font-weight: 300;
+  position: fixed;
+  z-index: 10;
+}

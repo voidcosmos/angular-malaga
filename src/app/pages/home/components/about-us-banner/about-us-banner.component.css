@@ -1,0 +1,42 @@
+img {
+  height: 200px;
+  width: 200px;
+}
+
+a {
+  background-color: #1c1c1c;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-top: 50px;
+  padding: 20px 100px;
+  transition: all 0.5s;
+}
+
+.container {
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.section-title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.text-content {
+  color: #cecece;
+}
+
+a:hover {
+  box-shadow: 0px 0px 10px 5px #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 599px) {
+  a {
+    padding: 20px 35px;
+  }
+}

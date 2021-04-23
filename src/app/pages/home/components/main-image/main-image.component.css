@@ -1,0 +1,71 @@
+div {
+  display: block;
+}
+
+.container {
+  background-image: url(assets/images/alcazaba-malaga.jpg);
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+
+.title-container {
+  height: 200px;
+  margin-left: 13%;
+  max-width: 45%;
+  position: absolute;
+  top: 30%;
+}
+
+.title {
+  color: #fff;
+  font-size: 100px;
+}
+
+.pre-title {
+  color: #fff;
+  font-size: 60px;
+  height: 25%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.subtitle {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 959px) {
+  .title-container {
+    max-width: none;
+  }
+
+  .pre-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .container img {
+    height: 600px;
+  }
+
+  .title-container {
+    margin-left: 5%;
+    max-width: none;
+    top: 20%;
+  }
+
+  .pre-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+}

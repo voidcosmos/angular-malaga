@@ -1,0 +1,17 @@
+.centered {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.highlight {
+  color: #c2002e;
+}
+
+.red-button {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  color: #000;
+}
